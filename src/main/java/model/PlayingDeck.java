@@ -11,7 +11,7 @@ public class PlayingDeck {
 
     private PlayingCard[] cardSet;
 
-    {
+    public PlayingDeck() {
         cardSet = new PlayingCard[NUM_OF_CARDS];
         int index = 0;
         for (int i = 1; i <= CARD_NAME_SET.length; i++) {
