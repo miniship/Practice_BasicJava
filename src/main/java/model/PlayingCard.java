@@ -1,40 +1,30 @@
 package model;
 
 public class PlayingCard {
-    private String name;
-    private int rank;
-    private String suit;
+    private CardRank rank;
+    private CardSuit suit;
 
     public PlayingCard() {
     }
 
-    public PlayingCard(String name, int rank, String suit) {
-        this.name = name;
+    public PlayingCard(CardRank rank, CardSuit suit) {
         this.rank = rank;
         this.suit = suit;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getRank() {
+    public CardRank getRank() {
         return rank;
     }
 
-    public void setRank(int rank) {
+    public void setRank(CardRank rank) {
         this.rank = rank;
     }
 
-    public String getSuit() {
+    public CardSuit getSuit() {
         return suit;
     }
 
-    public void setSuit(String suit) {
+    public void setSuit(CardSuit suit) {
         this.suit = suit;
     }
 }
